@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 id="title">Formulário Trybe Travel</h1>
+  <form id="main-form">
+    <label for="fullName">Nome Completo:</label>
+    <input type="text" id="fullName" name="fullName" placeholder="Digite seu nome completo" minlength="10" maxlength="40">
+    <br><br>
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" placeholder="Digite seu e-mail" minlength="10" maxlength="50">
+    <br><br>
+    <fieldset>
+      <legend>Destino Preferido:</legend>
+      <input type="radio" name="destinations" id="city" value="city">
+      <label for="city">Cidade</label>
+      <br>
+      <input type="radio" name="destinations" id="country" value="country">
+      <label for="country">Campo</label>
+      <br>
+      <input type="radio" name="destinations" id="beach" value="beach">
+      <label for="beach">Praia</label>
+      <br>
+      <input type="radio" name="destinations" id="mountain" value="mountain">
+      <label for="mountain">Montanha</label>
+      <br>
+    </fieldset>
+    <br>
+    <label for="question">Por que você deveria ser a pessoa desenvolvedora para ganhar o concurso TrybeTrip?</label>
+    <textarea name="question" id="question" placeholder="Digite sua resposta vencedora aqui" cols="50" rows="10" maxlength="500"></textarea>
+    <br><br>
+    <label for="date">Qual a melhor data para realizar sua viagem?</label>
+    <input type="date" id="date">
+    <br><br>
+    <label for="promo">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label>
+    <input type="checkbox" id="promo">
+    <br><br>
+    <label for="agreement">Concordo que as imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
+    <input type="checkbox" id="agreement">
+    <br><br>
+    <button type="submit" id="submit-btn" disabled>Enviar</button>
+    <button type="reset" id="clear-btn">Limpar</button>
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>

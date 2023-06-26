@@ -1,0 +1,13 @@
+fieldset {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+#question {
+  display: flex;
+}
+
+textarea {
+  width: 50%;
+}
